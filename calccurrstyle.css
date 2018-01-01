@@ -268,7 +268,7 @@ button:focus, #equals:focus {
   }
 }
 
-@media (max-width : 414px) {  
+@media (max-width : 415px) {  
 	.screen {
 		width : 90%;
 	}
