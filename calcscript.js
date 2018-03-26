@@ -6,10 +6,10 @@ $(document).ready(function() {
   function internalCalcToCalcDisplayConverter () {
     calcDisplay = internalCalc;
     if (/\*/.test(calcDisplay) === true) {
-    calcDisplay = calcDisplay.replace(/\*/g, "&times;");
+      calcDisplay = calcDisplay.replace(/\*/g, "&times;");
     }
     if (/\//.test(calcDisplay) === true) {
-    calcDisplay = calcDisplay.replace(/\//g, "&divide;");
+      calcDisplay = calcDisplay.replace(/\//g, "&divide;");
     }
   }
 
@@ -44,8 +44,6 @@ $(document).ready(function() {
     ans = undefined;
     displayAns = "";
     $(".subscreen").text(internalCalc);
-    /*$("#screen2").text(internalCalc);*/
-    console.log("Cleared!");
   }
 
   function evaluate() { 
@@ -68,7 +66,7 @@ $(document).ready(function() {
     if (/(--)$/.test(internalCalc) === false){
       internalCalc += "-";
       internalCalcToCalcDisplayConverter();
-      $(".top").text(calcDisplay);
+      $(".top").html(calcDisplay);
     }
   }
   
